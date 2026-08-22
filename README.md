@@ -11,6 +11,8 @@ A small experimental Python script that generates text using the Markov chain pr
    Both tables are then reorganized by frequency (`ordered_p_table` / `ordered_pair_p_table`) so that, at generation time, more common follow-up words are more likely to be picked — this is what gives the output its Markov-chain randomness instead of always picking the single most likely word.
 3. **Generation** — depending on the mode, the script walks forward one word at a time, using the tables above to pick the next word, and prints the result with a little typewriter/color effect.
 
+![Text synthesizer running in the terminal](cmd.png)
+
 ## Modes
 
 - **Mode 1 — single word + pair (alternating)**
@@ -39,12 +41,6 @@ Press `Ctrl+C` to exit — the prompt loop runs indefinitely by design.
 
 - Python 3, standard python library only (`os`, `random`, `time`).
 - A terminal that supports ANSI colors for the typewriter effect (most Linux/macOS terminals, and Windows 10+ terminals).
-
-## Screenshot
-
-```markdown
-![Text synthesizer running in the terminal](cmd.png)
-```
 
 ## Notes
 
