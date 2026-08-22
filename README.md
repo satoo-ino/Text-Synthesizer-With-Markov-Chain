@@ -42,7 +42,6 @@ Press `Ctrl+C` to exit — the prompt loop runs indefinitely by design.
 
 ## Screenshot
 
-![](cmd.png)
 ```markdown
 ![Text synthesizer running in the terminal](cmd.png)
 ```
