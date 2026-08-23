@@ -16,13 +16,13 @@ A small experimental Python script that generates text using the Markov chain pr
 ## Modes
 
 - **Mode 1 — single word + pair (alternating)** 
-Alternates between Single-word prediction and Word-pair prediction.
+- Alternates between Single-word prediction and Word-pair prediction.
 
 ![Mode 1](images/mode1.png)
 
   
 - **Mode 2 — pairs only** 
-Word-pair prediction only.
+- Word-pair prediction only.
 
 ![Mode 2](images/mode2.png)
 
