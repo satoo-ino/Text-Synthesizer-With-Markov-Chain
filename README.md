@@ -11,14 +11,18 @@ A small experimental Python script that generates text using the Markov chain pr
    Both tables are then reorganized by frequency (`ordered_p_table` / `ordered_pair_p_table`) so that, at generation time, more common follow-up words are more likely to be picked — this is what gives the output its Markov-chain randomness instead of always picking the single most likely word.
 3. **Generation** — depending on the mode, the script walks forward one word at a time, using the tables above to pick the next word, and prints the result with a little typewriter/color effect.
 
-![Text synthesizer running in the terminal](cmd.png)
+![Text synthesizer running in the terminal](images/cmd.png)
 
 ## Modes
 
 - **Mode 1 — single word + pair (alternating)**
-  Starts from a one-word prompt. Each step first predicts a word using single-word history, then immediately refines the choice using word-pair history before picking the actual next word.
+  alternates between Single-word prediction and Word-pair prediction.
+![Mode 1](images/mode1.png)
+
+  
 - **Mode 2 — pairs only**
-  Starts from a two-word prompt and only ever looks at word-pair history to keep generating. Tends to stay closer to phrasing that actually appeared in the training data.
+  Word-pair prediction only.
+![Mode 2](images/mode2.png)
 
 ## Usage
 
