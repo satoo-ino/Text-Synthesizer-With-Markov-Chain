@@ -50,7 +50,7 @@ Press `Ctrl+C` to exit — the prompt loop runs indefinitely by design.
 
 ## Notes
 
-This is a learning/experimental project, not a polished tool:
+This is a learning/experimental project:
 - No smoothing or fallback for unseen words/pairs beyond the error message.
 - Tables are rebuilt from scratch every run — nothing is cached or saved.
 - Not optimized for large training files; very frequent words/pairs can make the weighted-selection lists fairly large in memory.
